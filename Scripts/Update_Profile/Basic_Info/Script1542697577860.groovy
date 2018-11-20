@@ -15,6 +15,10 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('TEST CASE TO UPDATE BASIC INFORMATION OF USER')
 
+WebUI.callTestCase(findTestCase('Generic/Login_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Generic/Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 'Enter \'Address\''
 WebUI.setText(findTestObject('Object Repository/Page_Basic Info/textarea__addr1'), findTestData('Update_Profile_Testdata/Basic_Info').getValue(
         1, 1))
@@ -51,5 +55,15 @@ WebUI.delay(5)
 'Browser \'Back\''
 WebUI.back()
 
-WebUI.delay(5)
+'VERIFY UPDATED BASIC INFORMATION WHERE STATE '
+WebUI.verifyElementText(findTestObject('Page_User Profile/p_State'), findTestData('Update_Profile_Testdata/Basic_Info').getValue(
+        4, 1))
+
+'VERIFY UPDATED BASIC INFORMATION WHERE EMERGENCY RELATIONSHIP\r\n'
+WebUI.verifyElementText(findTestObject('Page_User Profile/p_Emergency Relationship'), findTestData('Update_Profile_Testdata/Basic_Info').getValue(
+        7, 1))
+
+'VERIFY UPDATED BASIC INFORMATION WHERE EMERGENCY CONTACT NUMBER'
+WebUI.verifyElementText(findTestObject('Page_User Profile/p_Emergency Contact'), findTestData('Update_Profile_Testdata/Basic_Info').getValue(
+        6, 1))
 
