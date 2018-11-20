@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_CGPAPercentage_percentage</name>
+   <tag></tag>
+   <elementGuidId>d3362136-4cda-4ed8-9052-0ea97e618f51</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='academicInformation']/div/table/tbody/tr/td[7]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='academicInformation']/div/table/tbody/tr/td[7]/input</value>
+   </webElementProperties>
+</WebElementEntity>
