@@ -3,6 +3,6 @@
    <description>LOGIN TO JIN APPLICATION</description>
    <name>Login_Page</name>
    <tag></tag>
-   <comment></comment>
+   <comment>TEST CASE TO LOGIN TO JIN APPLICATION</comment>
    <testCaseGuid>2f5e7531-a4e9-48ec-8914-05074e9c6a80</testCaseGuid>
 </TestCaseEntity>

@@ -13,26 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('TEST CASE TO LOGIN TO JIN APPLICATION')
+WebUI.comment('TEST CASE TO NAVIGATE TO UPDATE PROFILE PAGE ')
 
-WebUI.openBrowser('')
+'Click \'down-arrow\' on top left corner '
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/i_arrow_drop_down'))
 
-WebUI.maximizeWindow()
+'Click \'Profile\' '
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/a_Profile'))
 
-'Enter JIN url'
-WebUI.navigateToUrl('http://192.168.0.28:5051/')
+'Click \'Create\''
+WebUI.click(findTestObject('Object Repository/Page_User Profile/i_create'))
 
-'Enter \'Email\'\r\n'
-WebUI.setText(findTestObject('Object Repository/Page_JIN Login/input_JIN_email'), 'maddie@gmail.com')
-
-'Enter \'Password\''
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_JIN Login/input_Email_password'), 'R2dZ4hvJ2ujoDGjQ2cClHw==')
-
-'Click \'Login\' button'
-WebUI.click(findTestObject('Object Repository/Page_JIN Login/button_LOGIN'))
-
-'Verify succesful login'
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Dashboard/h5_Dashboard'), 0)
+'Verify \'Profile Update\' Page'
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Basic Info/a_Basic Info'), 0)
 
 WebUI.delay(5)
 

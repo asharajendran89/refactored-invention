@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>LINKS TO CREATE/UPDATE USERS PROFILE</description>
+   <name>Profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e04e0d9b-c1df-4423-b0ee-7e67a0c54e38</testCaseGuid>
+</TestCaseEntity>
