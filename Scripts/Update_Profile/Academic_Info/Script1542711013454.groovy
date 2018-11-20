@@ -13,9 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Generic/Login_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Generic/Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.comment('TEST CASE TO UPDATE ACADEMIC INFORMATION OF USER')
 
 'Click \'Academic Tab\''
 WebUI.click(findTestObject('Page_Basic Info/a_Academic Information'))

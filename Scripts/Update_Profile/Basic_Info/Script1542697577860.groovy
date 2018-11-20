@@ -15,10 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('TEST CASE TO UPDATE BASIC INFORMATION OF USER')
 
-WebUI.callTestCase(findTestCase('Generic/Login_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Generic/Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
 'Enter \'Address\''
 WebUI.setText(findTestObject('Object Repository/Page_Basic Info/textarea__addr1'), findTestData('Update_Profile_Testdata/Basic_Info').getValue(
         1, 1))
