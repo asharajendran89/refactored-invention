@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TEST CASE TO UPDATE BASIC INFORMATION OF USER PROFILE</description>
+   <name>Basic_Info</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aff3a082-aa79-4b8b-a988-1a9a82d986fa</testCaseGuid>
+</TestCaseEntity>
